@@ -1,0 +1,7 @@
+{
+  "name": "smartCK",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
