@@ -1,0 +1,65 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>clocking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="card">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+        <div class="d-lfex justify-content-center flex-column">
+            <div class="name_container">
+                <div class="name">Odafe kevin </div>
+            </div>
+            <div class="address">Appmart Group</div>
+        
+        </div>
+
+    </div>
+    <div class="text-center">
+        
+     <div class="loader" >
+         <div class="face face1">
+            <div class="circle"></div>
+        </div>
+        <div class="face face2">
+            <div class="circle"></div>
+        </div>
+      
+    </div>
+
+
+<img  [src]="photo" class="imgloader" id='img' style=" border-radius: 50%;  height: 260px; width: 260px;text-align:center;">
+
+    </div>
+
+    
+
+    <!-- STATUS -->
+        <div style="margin-right: 20px; margin-left: 20px; margin-top: 20px;">
+    <div id="myProgress" class="liviness" >
+      <div id="myBar">Checking Photo Quality Please Wait ...</div>
+    </div>
+    <!-- Verifying -->
+    <div id="myProgress_v " class="verify">
+      <div id="myBar_v">Verifying Photo Please Wait ...</div>
+    </div>
+
+    </div>
+
+  
+</div>
+  <!-- Capture -->
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  
+    <ion-fab-button (click)="takePicture()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="token(09086985989)">
+        <ion-icon name="camera">d</ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>

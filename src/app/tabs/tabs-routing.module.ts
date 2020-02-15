@@ -38,6 +38,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'clocking',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../clocking/clocking.module').then(m => m.ClockingPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
