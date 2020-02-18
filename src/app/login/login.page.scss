@@ -1,0 +1,30 @@
+ion-item{
+    --background: #000000;
+    --color: #fff;
+    --border-color: #fff;
+}
+ion-button{
+    --background: #ffc409;
+    --color: #fff;
+}
+
+.vertical-align-content > *
+{
+     display: flex!important;
+     align-content: center!important;
+     align-items: center!important;
+}
+
+.imgloader{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 322px;
+    height: 322px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+
+}
+

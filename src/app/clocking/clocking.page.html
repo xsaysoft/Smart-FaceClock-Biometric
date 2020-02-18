@@ -5,14 +5,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="dark" >
+  <!-- Default Spinner -->
+
   <div class="card">
     <div class="card-header">
     </div>
     <div class="card-body">
         <div class="d-lfex justify-content-center flex-column">
             <div class="name_container">
-                <div class="name">Odafe kevin </div>
+                <div class="name">{{userData.Name}}</div>
             </div>
             <div class="address">Appmart Group</div>
         
@@ -21,7 +23,7 @@
     </div>
     <div class="text-center">
         
-     <div class="loader" >
+     <div class="loader" [hidden]=ishidden_loader>
          <div class="face face1">
             <div class="circle"></div>
         </div>
@@ -39,27 +41,28 @@
     
 
     <!-- STATUS -->
-        <div style="margin-right: 20px; margin-left: 20px; margin-top: 20px;">
-    <div id="myProgress" class="liviness" >
+    <div style="margin-right: 20px; margin-left: 20px; margin-top: 15px;">
+    <div id="myProgress"  [hidden]=ishidden_liviness >
       <div id="myBar">Checking Photo Quality Please Wait ...</div>
+ 
     </div>
     <!-- Verifying -->
-    <div id="myProgress_v " class="verify">
+    <div id="myProgress_v"  [hidden]=ishidden_verify > 
       <div id="myBar_v">Verifying Photo Please Wait ...</div>
+     
     </div>
 
     </div>
 
-  
+    
 </div>
+
   <!-- Capture -->
   <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-  
+   
     <ion-fab-button (click)="takePicture()">
         <ion-icon name="camera"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button (click)="token(09086985989)">
-        <ion-icon name="camera">d</ion-icon>
-      </ion-fab-button>
+  
     </ion-fab>
   </ion-content>
